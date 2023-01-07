@@ -1,0 +1,127 @@
+.arlo-filter-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.arlo-checkbox-filter-option {
+    display: flex;
+    align-items: center;
+}
+.arlo-checkbox-filter-option > label {
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.arlo-event-list {
+    list-style-type: none;
+    display: grid;
+    gap: 1em;
+    align-items: stretch;
+    margin-top: 3em;
+    padding-left: 0px;
+}
+@supports (width: min(350px, 100%)) {
+    .arlo-event-list {
+        grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    }
+}
+.arlo-event-listitem {
+    padding: 1em;
+    max-width: 600px;
+}
+.arlo-event-listitem > div:hover {
+    box-shadow: 0px 0px 20px -12px rgba(0,0,0,0.9);
+    -webkit-box-shadow: 0px 0px 20px -12px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 20px -12px rgba(0,0,0,0.9);
+}
+.arlo-event-listitem > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 1px solid #888;
+}
+.arlo-event-list > div,
+.arlo-event-list > script {
+    grid-column: 1/-1;
+    display: none;
+}
+.arlo-event-listitem .course-header {
+    width: 100%;
+    background-color: #DDD;
+}
+.arlo-event-listitem .course-title-link {
+    text-decoration: none;
+}
+.arlo-event-listitem .course-title {
+    padding: 10px;
+    color: #660033;
+    text-decoration: none;
+    text-transform: unset;
+    position: relative;
+}
+.arlo-event-listitem img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.arlo-event-listitem .course-body {
+    flex-grow: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.arlo-event-listitem .course-body > * + * {
+    margin-top: 1em;
+}
+.arlo-event-listitem .course-categories > a {
+    color: #660033;
+    font-weight: bold;
+}
+.arlo-event-listitem .course-categories > a + a {
+    margin-left: 1em;
+}
+.arlo-event-listitem .course-summary {
+    flex-grow: 1;
+}
+.arlo-event-listitem .course-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+.arlo-event-listitem .course-actions .course-register {
+    font-weight: bold;
+    color: #D8262E;
+}
+.arlo-event-listitem .course-info {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-top: 1px solid #888;
+    background-color: #660033;
+    color: white;
+}
+.arlo-event-listitem .course-credit ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.arlo-event-list p {
+    margin-bottom: 0px;
+}
+
+#filters div {
+    padding: 5px;
+    font-weight:bold;
+}
+
+#filters div label {
+    font-weight: 400;
+}
+
+@media (max-width: 800px) {
+    #filters .arlo-checkbox-filter-option {
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+.topimage img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
+.arlo-eventtemplate-listitems {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.arlo-event-list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.course-register-closed {
+    font-weight: bold;
+    color: #D8262E;
+}
+.event-container {
+    display: grid;
+    grid-template-columns: calc(100% - 300px) 300px;
+}
+@media (max-width: 990px) {
+    .event-container {
+        grid-template-columns: 100%;
+    }
+}
+.event-description {
+    padding: 1em;
+}
+.event-description h2 {
+    color: #660033;
+}
+.event-description .divider-top {
+    border-top: 2px solid #AAA;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+.event-details ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.session-title {
+    font-weight: bold;
+}
+.event-details {
+    padding: 1em;
+    background-color: #660033;
+    color: white;
+}
+.event-details > div + div {
+    margin-top: 1em;
+}
+.detail-title {
+    font-weight: bold;
+}
+.event-details .detail-title {
+    color: #DDD;
+}
+.detail-content,
+.presenter-list li {
+    padding-left: 1em;
+}
+.event-details ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+#presenter-profiles {
+    display: none;
+}
+#presenter-profiles[data-state=content] {
+    display: block;
+}
+#presenter-profiles img {
+    max-width: 125px;
+    padding-right: 10px;
+}
+.registration-box {
+    clear: both;
+    margin-top: 2em;
+}
